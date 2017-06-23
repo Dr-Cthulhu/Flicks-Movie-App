@@ -11,6 +11,7 @@ import org.parceler.Parcel;
 @Parcel
 public class Movie {
 
+    int id;
     String title;
     String synopsis;
     String posterPath;
@@ -21,6 +22,7 @@ public class Movie {
     public Movie() {}
 
     public Movie(JSONObject object) throws JSONException {
+        id = object.getInt("id");
         title = object.getString("title");
         synopsis = object.getString("overview");
         posterPath = object.getString("poster_path");
@@ -52,4 +54,9 @@ public class Movie {
     public int getVoteNumber() {
         return voteNumber;
     }
+
+    public int getId() {
+        return id;
+    }
+
 }
