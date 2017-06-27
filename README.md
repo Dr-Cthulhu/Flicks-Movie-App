@@ -32,7 +32,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Sometimes quits when switching from landscape to portrait or vice versa; was not able to fix
 
 ## Open-source libraries used
 
